@@ -12,7 +12,7 @@ Side Goal: decorate with time functions to see and compare
 '''
 
 
-from numpy import random
+from numpy import random, randbytes
 import timeit
 
 # thanks to https://stackoverflow.com/questions/2512225/matplotlib-plots-not-showing-up-in-mac-osx
