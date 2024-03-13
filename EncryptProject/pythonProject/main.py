@@ -23,19 +23,18 @@ Side Goal: decorate with time functions to see and compare
 # This also means to download onto Virtual Box (also not available for m1 macs)
 # so to test and make sure it works for Mark who uses Linux Mint.
 
-from Crypto.Cipher import AES
-from Crypto.Cipher import DES
-from Crypto.Cipher import DES3
-from numpy import random, randbytes
+from Cryptodome.Cipher import AES
+from Cryptodome.Cipher import DES
+from Cryptodome.Cipher import DES3
+from numpy import random
+from random import randbytes
 
 import timeit
 
-# thanks to https://stackoverflow.com/questions/2512225/matplotlib-plots-not-showing-up-in-mac-osx
 import matplotlib
-matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 
-
+print('Hello World')
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
