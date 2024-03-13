@@ -34,7 +34,36 @@ import timeit
 import matplotlib
 import matplotlib.pyplot as plt
 
-print('Hello World')
+#test to encrypt
+words = "Hello World!"
+data = bytearray(words, 'utf-8')
+
+key = b'Sixteen byte key'
+
+cipher = AES.new(key, AES.MODE_EAX)
+
+
+nonce = cipher.nonce
+
+ciphertext, tag = cipher.encrypt_and_digest(data)
+
+
+# test to decyrpt
+key = b'Sixteen byte key'
+
+cipher = AES.new(key, AES.MODE_EAX, nonce=nonce)
+
+plaintext = cipher.decrypt(ciphertext)
+
+try:
+
+    cipher.verify(tag)
+
+    print("The message is authentic:", plaintext)
+
+except ValueError:
+
+    print("Key incorrect or message corrupted")
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
