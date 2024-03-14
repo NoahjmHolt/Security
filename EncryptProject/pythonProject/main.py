@@ -34,5 +34,46 @@ import matplotlib
 import matplotlib.pyplot as plt
 
 
+def aes_encryption(input_file, passphrase, output_file):
+    # input is readable, output is encrypted
+    subprocess.run(f"openssl enc -aes-256-cbc -salt -k {passphrase} -in {input_file} -out {output_file}", shell=True)
+
+
+def aes_decryption(input_file,  passphrase, output_file):
+    # input is encrypted, output is readable
+    subprocess.run(f"openssl enc -d -aes-256-cbc -k {passphrase}  -in {input_file} -out {output_file}", shell=True)
+
+
+def des_encryption(input_file,  passphrase, output_file):
+    # input is readable, output is encrypted
+    subprocess.run(f"openssl enc -des-ede3-cbc -k {passphrase}  -salt -in {input_file} -out {output_file}", shell=True)
+
+
+def des_decryption(input_file,  passphrase, output_file):
+    # input is encrypted, output is readable
+    subprocess.run(f"openssl enc -d -aes-256-cbc -k {passphrase}  -in {input_file} -out {output_file}", shell=True)
+
+
+def des3_encryption(input_file,  passphrase, output_file):
+    # input is readable, output is encrypted
+    subprocess.run(f"openssl enc -des-ede3-cbc -salt -k {passphrase}  -in {input_file} -out {output_file}", shell=True)
+
+
+def des3_decryption(input_file,  passphrase, output_file):
+    # input is encrypted, output is readable
+    subprocess.run(f"openssl enc -d -des-ede3-cbc -k {passphrase}  -in {input_file} -out {output_file}", shell=True)
+
+
+top_secret_password = "AtTheDawnOfThe3rdAge"
+
+des_times_e = []
+des3_times_e = []
+aes_times_e = []
+
+des_times_d = []
+des3_times_d = []
+aes_times_d = []
+
+
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
