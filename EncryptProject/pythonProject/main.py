@@ -28,10 +28,23 @@ Side Goal: decorate with time functions to see and compare
 
 import subprocess
 
-import timeit
+from time import time
 
 import matplotlib
 import matplotlib.pyplot as plt
+
+# lets start with the wrapper so we can compare the times later.
+def timer_wrapper(func):
+    # our funcs will output files and take in files
+    # this means we can just return time taken
+    def the_wrapper(*args, **kwargs):
+        start = time()
+        func(*args, **kwargs)
+        end = time()
+
+        total_time = end - start
+        return total_time
+    return the_wrapper()
 
 
 
