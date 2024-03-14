@@ -26,28 +26,36 @@ Time: too long (probably 4 hours to finally get to the realization,
       it out sooner and now I feel silly for not having done so.
 
 Issue 2:
+After considering options, I would rather use my normal laptop.
+Option: I could use openSSL as I did in different project so will try that.
+Resolution: Instead of Crypto.Cipher, I will use openSSL which
+            is included on linux mint.
+Time: 2 long again, had to install virtual box and linux mint for a test enviornment
+        then make sure that openssl and python versions are compatable to work together
+        it does at least so will just do that.
 
 
 DES
 ===========================================================
-https://pycryptodome.readthedocs.io/en/latest/src/cipher/des.html
+https://pycryptodome.readthedocs.io/en/latest/src/cipher/des.html xxx
+https://www.openssl.org/docs/man1.0.2/man3/DES_cbc_cksum.html
 
 
 
 
 3DES
 ===========================================================
-https://pycryptodome.readthedocs.io/en/latest/src/cipher/des3.html
+https://pycryptodome.readthedocs.io/en/latest/src/cipher/des3.html xxx
 
 
 
 AES
 ===========================================================
-https://pycryptodome.readthedocs.io/en/latest/src/cipher/aes.html
+https://pycryptodome.readthedocs.io/en/latest/src/cipher/aes.html xxx
 
 
 Resources
 ===========================================================
-https://pycryptodome.readthedocs.io/en/latest/src/cipher/cipher.html
-
+https://pycryptodome.readthedocs.io/en/latest/src/cipher/cipher.html xxx
+https://tutonics.com/articles/easy-file-encryption-using-openssl/
 
