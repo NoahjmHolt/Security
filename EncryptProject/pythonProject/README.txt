@@ -34,6 +34,11 @@ Time: 2 long again, had to install virtual box and linux mint for a test enviorn
         then make sure that openssl and python versions are compatable to work together
         it does at least so will just do that.
 
+Issue 3:
+There is not a way to return the time elapsed of a function from a wrapper like I thought.
+Resolution: I will just do it the hard way since it is just a side project thing.
+Time: 1.5 hours of research and trying to find out
+
 
 DES
 ===========================================================
