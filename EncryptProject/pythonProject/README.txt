@@ -3,6 +3,13 @@ Encryption Type Comparisons
 
 Over Arching Goal
 ===========================================================
+Using the 3 discussed encryption standards from class, write a file that can
+encrypt with any of them to link later to a GUI (written by Justin) that can
+send files that they encrypt and decrypt.
+
+If there is time, I was curious in class when teacher said that people moved from
+des3 to aes because of time costs and so would like to use pyplot to look and compare
+the 3 standards in time to encrypt and decrypt files of different sizes.
 
 
 Research and Basics
@@ -45,18 +52,24 @@ DES
 https://pycryptodome.readthedocs.io/en/latest/src/cipher/des.html xxx
 https://www.openssl.org/docs/man1.0.2/man3/DES_cbc_cksum.html
 
-
+Simple function call to run on the command line
+Used subproccess to do in python
 
 
 3DES
 ===========================================================
 https://pycryptodome.readthedocs.io/en/latest/src/cipher/des3.html xxx
 
+Simple function call to run on the command line
+Used subproccess to do in python
 
 
 AES
 ===========================================================
 https://pycryptodome.readthedocs.io/en/latest/src/cipher/aes.html xxx
+
+Simple function call to run on the command line
+Used subproccess to do in python
 
 
 Resources
